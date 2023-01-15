@@ -26,6 +26,9 @@
   <!--====== gLightBox css ======-->
   <link rel="stylesheet" href="assets/css/glightbox.min.css" />
 
+  <!--====== swiper js ======-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -120,7 +123,7 @@
           <div class="header-content">
             <h1>Prevoz robe Čejvan d.o.o.</h1>
             <p>
-              Vršimo prevoz robe u EU, CH i BiH. Prevozimo svu vrstu robe. Međunarodni transport za Englesku, Češku i BiH kao i unutar BiH.
+              Vršimo prevoz robe u EU, CH i BiH. Prevozimo svu vrstu robe. Međunarodni transport za <span style="font-weight: bold; text-decoration: underline;">Englesku, Češku</span> i BiH kao i unutar BiH.
             </p>
             <div class="button">
               <a href="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
@@ -194,7 +197,37 @@
   </section>
   <!-- ===== service-area end ===== -->
 
+  <section class="image-container">
+    <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="/assets/images/swiper/IMG_20230115_153231_887.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/assets/images/swiper/IMG_20230115_160849_606.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/assets/images/swiper/IMG_20230115_160855_342.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/assets/images/swiper/IMG_20230115_160858_153.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/assets/images/swiper/IMG_20230115_160901_318.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/assets/images/swiper/IMG_20230115_160904_357.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/assets/images/swiper/IMG_20230115_160907_245.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/assets/images/swiper/IMG_20230115_160910_166.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/assets/images/swiper/IMG_20230115_181223_110.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/assets/images/swiper/IMG_20230115_181225_637.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/assets/images/swiper/IMG_20230115_181229_869.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/assets/images/swiper/IMG_20230115_181232_786.jpg" alt=""></div>
+          
+          
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+  </section>
   
 
   <!-- Start Cta Area -->
@@ -333,6 +366,7 @@
   <script src="assets/js/glightbox.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/tiny-slider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   <script>
 
@@ -375,6 +409,26 @@
       'autoplayVideos': true,
     });
 
+  </script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+  
+});
   </script>
 </body>
 
