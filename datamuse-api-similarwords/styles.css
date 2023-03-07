@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: #050A30;
+}
+.main{
+    min-height: 100svh;
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    min-height: 150px;
+}
+h1{
+    color: white;
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    gap: 10px;
+}
+.input-container{
+    position: relative;
+}
+.dynamicLabel{
+    color:white;
+    background: none;
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    transition: 0.3s ease;
+}
+form input[type="text"]{
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    transition: 0.3s;
+}
+form input[type="text"]:focus{
+    transform: scale(1.03);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+form input[type="text"]::placeholder{
+    display: none;
+    opacity: 0;
+}
+form input[type="submit"]{
+    padding: 5px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    color: white;
+    background-color: #000C66;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+form input[type="submit"]:hover{
+    transform: scale(0.9);
+}
+form input[type="text"]:focus + .dynamicLabel,
+form input[type="text"]:not(:placeholder-shown) + .dynamicLabel{
+    transform: translate(-10px, -30px);
+}
+.error{
+    color: red;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.error.hidden{
+    display: none;
+}
+.word-container{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+ul li{
+    color: white;
+    cursor: pointer;
+}
