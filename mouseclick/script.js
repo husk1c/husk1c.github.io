@@ -30,5 +30,6 @@ remove.addEventListener('click', ()=>{
 })
 
 undo.addEventListener('click', ()=>{
-    createElement([removedpositionsArray.pop()]);
+    positionArray.push(removedpositionsArray.pop())
+    createElement(positionArray.slice(-1));
 })
