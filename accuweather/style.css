@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+img{
+    -webkit-user-drag: none;
+}
+.main-section{
+    display: flex;
+    min-height: 100svh;
+    align-items: center;
+    justify-content: center;
+}
+.weather-container{
+    display: flex;
+    flex-direction: column;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    transition: 0.5s ease-in;
+}
+.additional-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+i.hidden{
+    display: none;
+}
+.top-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+}
+.wind-stats, .pressure-stats, .visibility-stats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}

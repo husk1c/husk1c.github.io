@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccuWeather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0144dd64a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="main-section">
+        <div class="weather-container">
+            <label>Your city:</label>
+
+            <div class="search-container">
+                <input type="text" id="citySearch">
+                <input type="submit" id="submitSearch" value="Search">
+            </div>
+
+            <div class="info-container">
+                <div class="top-info">
+                    <p class="current-temperature"></p>
+                    <img class="current-weatherIcon" src="">
+                    <p class="current-weather"></p>
+                </div>
+                <div class="additional-info">
+                    <div class="wind-stats">
+                        <i class="fa-solid fa-wind hidden"></i>
+                        <p class="wind-speed"></p>
+                    </div>
+                    <div class="pressure-stats">
+                        <i class="fa-solid fa-gauge hidden"></i>
+                        <p class="pressure"></p>
+                    </div>
+                    <div class="visibility-stats">
+                        <i class="fa-solid fa-eye hidden"></i>
+                        <p class="visibility"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
